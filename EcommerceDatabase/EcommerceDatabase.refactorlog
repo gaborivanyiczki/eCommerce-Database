@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="6c41386f-e4e7-408e-9073-4aff5b94e139" ChangeDateTime="12/05/2018 14:45:18">
+    <Property Name="ElementName" Value="[dbo].[ta_product_tag].[category_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ta_product_tag]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="tag_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f63b28b5-5c8a-49f6-9b7a-f5a403694d85" ChangeDateTime="12/05/2018 14:59:09">
+    <Property Name="ElementName" Value="[dbo].[Orders].[payment]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Orders]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="payment_method_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="884ca757-96ae-4512-a9a3-3488d3b7ecb8" ChangeDateTime="12/05/2018 15:00:31">
+    <Property Name="ElementName" Value="[dbo].[Orders].[coupont_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Orders]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="coupon_id" />
+  </Operation>
+</Operations>
