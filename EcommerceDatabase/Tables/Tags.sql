@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Tags]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] NVARCHAR(MAX) NOT NULL, 
     [category_id] INT NULL, 
     [parent_id] INT NULL, 

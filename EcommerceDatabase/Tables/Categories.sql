@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Categories]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] NVARCHAR(MAX) NOT NULL, 
     [parent_id] INT NULL, 
     [Created_at] DATETIME NOT NULL, 

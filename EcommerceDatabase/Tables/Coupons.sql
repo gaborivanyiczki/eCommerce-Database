@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Coupons]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Code] NVARCHAR(50) NOT NULL, 
     [Description] NVARCHAR(MAX) NULL, 
     [Active] BIT NOT NULL, 

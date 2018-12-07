@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[ta_product_tag]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [product_id] INT NOT NULL, 
     [tag_id] INT NOT NULL, 
     [Value] NVARCHAR(MAX) NOT NULL, 

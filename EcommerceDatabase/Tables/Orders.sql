@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Orders]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Order_date] DATETIME NOT NULL, 
     [Total] DECIMAL(7, 2) NOT NULL, 
     [coupon_id] INT NULL, 
@@ -9,7 +9,10 @@
     [order_status] NVARCHAR(50) NOT NULL, 
     [delivery_estimation_date] DATE NULL, 
     [invoice_id] INT NULL, 
-    [payment_method_id] INT NOT NULL, 
+    [payment_method_id] INT NOT NULL,
+	[CustomerName] NVARCHAR(MAX) NULL, 
+    [CustomerAddress] NVARCHAR(MAX) NULL, 
+    [CustomerPhone] NVARCHAR(50) NULL, 
     [Created_at] DATETIME NOT NULL, 
     [Updated_at] DATETIME NULL, 
     CONSTRAINT [FK_Orders_Coupons] FOREIGN KEY ([coupon_id]) REFERENCES [Coupons]([Id]), 
